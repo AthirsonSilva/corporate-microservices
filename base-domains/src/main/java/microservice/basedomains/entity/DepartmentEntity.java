@@ -7,6 +7,7 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
 @AllArgsConstructor
@@ -18,6 +19,7 @@ public class DepartmentEntity {
     private String name;
     private String description;
     private String code;
+    private String organizationCode;
     @CreatedDate
     private String createdAt;
     @LastModifiedDate
