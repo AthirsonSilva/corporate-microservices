@@ -18,7 +18,7 @@ public class EmployeeEntity {
     private String firstName;
     private String lastName;
     private String email;
-    private String departmentId;
+    private String departmentCode;
     @CreatedDate
     private String createdAt;
     @LastModifiedDate
