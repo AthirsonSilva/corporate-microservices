@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>microservice</groupId>
-	<artifactId>organization-service</artifactId>
+	<artifactId>organizationPayload-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>organization-service</name>
+	<name>organizationPayload-service</name>
 	<description>Spring boot Organization microservice</description>
 	<properties>
 		<java.version>17</java.version>
@@ -20,6 +20,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>microservice</groupId>
+			<artifactId>base-domains</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
