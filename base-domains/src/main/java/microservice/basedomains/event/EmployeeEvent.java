@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import microservice.basedomains.enums.EventStatus;
-import microservice.basedomains.payload.Employee;
+import microservice.basedomains.payload.EmployeePayload;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,5 +12,5 @@ import microservice.basedomains.payload.Employee;
 public class EmployeeEvent {
     private String message;
     private EventStatus status;
-    private Employee employee;
+    private EmployeePayload employeePayload;
 }

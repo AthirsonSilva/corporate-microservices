@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import microservice.basedomains.enums.EventStatus;
-import microservice.basedomains.payload.Organization;
+import microservice.basedomains.payload.OrganizationPayload;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,5 +12,5 @@ import microservice.basedomains.payload.Organization;
 public class OrganizationEvent {
     private String message;
     private EventStatus status;
-    private Organization organization;
+    private OrganizationPayload organizationPayload;
 }

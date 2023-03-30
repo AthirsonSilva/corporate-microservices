@@ -9,11 +9,9 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Employee {
+public class EmployeePayload {
     private String id;
     private String firstName;
     private String lastName;
     private String email;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 }

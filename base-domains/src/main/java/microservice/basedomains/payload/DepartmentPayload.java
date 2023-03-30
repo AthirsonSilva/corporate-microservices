@@ -9,11 +9,9 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Organization {
+public class DepartmentPayload {
     private String id;
     private String name;
     private String description;
     private String code;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 }
