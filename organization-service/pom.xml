@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>microservice</groupId>
-	<artifactId>organizationPayload-service</artifactId>
+	<artifactId>organization-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>organizationPayload-service</name>
 	<description>Spring boot Organization microservice</description>

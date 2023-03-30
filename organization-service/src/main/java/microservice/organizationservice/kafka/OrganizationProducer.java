@@ -31,14 +31,14 @@ public class OrganizationProducer {
                 .build();
 
         OrganizationEntity entity = OrganizationMapper.mapToEntity(event.getOrganizationPayload());
-        OrganizationEntity savedEntity = repository.save(entity);
+        entity = repository.save(entity);
 
-        event.getOrganizationPayload().setId(savedEntity.getId());
+        event.getOrganizationPayload().setId(entity.getId());
 
         LOGGER.info(String.format("ORGANIZATION PRODUCER: -> Saving organization -> %s", entity));
 
         kafkaTemplate.send(message);
 
-        return savedEntity;
+        return entity;
     }
 }
